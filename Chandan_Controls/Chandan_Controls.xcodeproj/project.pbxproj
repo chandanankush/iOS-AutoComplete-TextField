@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5822EE791CE9B1E500588EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EE781CE9B1E500588EB7 /* main.m */; };
+		5822EE7C1CE9B1E500588EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EE7B1CE9B1E500588EB7 /* AppDelegate.m */; };
+		5822EE7F1CE9B1E500588EB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EE7E1CE9B1E500588EB7 /* ViewController.m */; };
+		5822EE821CE9B1E500588EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE801CE9B1E500588EB7 /* Main.storyboard */; };
+		5822EE871CE9B1E500588EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE861CE9B1E500588EB7 /* Assets.xcassets */; };
+		5822EE8A1CE9B1E500588EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */; };
+		5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */; };
+		5822EEB91CE9B3EC00588EB7 /* CATextFieldWithTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */; };
+		5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5822EE741CE9B1E500588EB7 /* Chandan_Controls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chandan_Controls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822EE781CE9B1E500588EB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5822EE7A1CE9B1E500588EB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5822EE7B1CE9B1E500588EB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5822EE7D1CE9B1E500588EB7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5822EE7E1CE9B1E500588EB7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5822EE811CE9B1E500588EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5822EE861CE9B1E500588EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5822EE891CE9B1E500588EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5822EE8B1CE9B1E500588EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoFillTextField.h; sourceTree = "<group>"; };
+		5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoFillTextField.m; sourceTree = "<group>"; };
+		5822EEB11CE9B3EC00588EB7 /* CATextFieldWithTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextFieldWithTableView.h; sourceTree = "<group>"; };
+		5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextFieldWithTableView.m; sourceTree = "<group>"; };
+		5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoCompleteObject.h; sourceTree = "<group>"; };
+		5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoCompleteObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5822EE711CE9B1E500588EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5822EE6B1CE9B1E500588EB7 = {
+			isa = PBXGroup;
+			children = (
+				5822EE761CE9B1E500588EB7 /* Chandan_Controls */,
+				5822EE751CE9B1E500588EB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5822EE751CE9B1E500588EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5822EE741CE9B1E500588EB7 /* Chandan_Controls.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5822EE761CE9B1E500588EB7 /* Chandan_Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5822EEAE1CE9B3EC00588EB7 /* AutoCompleteTextField */,
+				5822EE7A1CE9B1E500588EB7 /* AppDelegate.h */,
+				5822EE7B1CE9B1E500588EB7 /* AppDelegate.m */,
+				5822EE7D1CE9B1E500588EB7 /* ViewController.h */,
+				5822EE7E1CE9B1E500588EB7 /* ViewController.m */,
+				5822EE801CE9B1E500588EB7 /* Main.storyboard */,
+				5822EE861CE9B1E500588EB7 /* Assets.xcassets */,
+				5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */,
+				5822EE8B1CE9B1E500588EB7 /* Info.plist */,
+				5822EE771CE9B1E500588EB7 /* Supporting Files */,
+			);
+			path = Chandan_Controls;
+			sourceTree = "<group>";
+		};
+		5822EE771CE9B1E500588EB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5822EE781CE9B1E500588EB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5822EEAE1CE9B3EC00588EB7 /* AutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */,
+				5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */,
+				5822EEB11CE9B3EC00588EB7 /* CATextFieldWithTableView.h */,
+				5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */,
+				5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */,
+				5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */,
+			);
+			name = AutoCompleteTextField;
+			path = Chandan_Cotrol/AutoCompleteTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5822EE731CE9B1E500588EB7 /* Chandan_Controls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5822EE8E1CE9B1E500588EB7 /* Build configuration list for PBXNativeTarget "Chandan_Controls" */;
+			buildPhases = (
+				5822EE701CE9B1E500588EB7 /* Sources */,
+				5822EE711CE9B1E500588EB7 /* Frameworks */,
+				5822EE721CE9B1E500588EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chandan_Controls;
+			productName = Chandan_Controls;
+			productReference = 5822EE741CE9B1E500588EB7 /* Chandan_Controls.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5822EE6C1CE9B1E500588EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Chandan SIngh";
+				TargetAttributes = {
+					5822EE731CE9B1E500588EB7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5822EE6F1CE9B1E500588EB7 /* Build configuration list for PBXProject "Chandan_Controls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5822EE6B1CE9B1E500588EB7;
+			productRefGroup = 5822EE751CE9B1E500588EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5822EE731CE9B1E500588EB7 /* Chandan_Controls */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5822EE721CE9B1E500588EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822EE8A1CE9B1E500588EB7 /* LaunchScreen.storyboard in Resources */,
+				5822EE871CE9B1E500588EB7 /* Assets.xcassets in Resources */,
+				5822EE821CE9B1E500588EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5822EE701CE9B1E500588EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822EE7F1CE9B1E500588EB7 /* ViewController.m in Sources */,
+				5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */,
+				5822EE7C1CE9B1E500588EB7 /* AppDelegate.m in Sources */,
+				5822EEB91CE9B3EC00588EB7 /* CATextFieldWithTableView.m in Sources */,
+				5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */,
+				5822EE791CE9B1E500588EB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5822EE801CE9B1E500588EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5822EE811CE9B1E500588EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5822EE891CE9B1E500588EB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5822EE8C1CE9B1E500588EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5822EE8D1CE9B1E500588EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5822EE8F1CE9B1E500588EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chandan_Controls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chandan-INC.Chandan-Controls";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5822EE901CE9B1E500588EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chandan_Controls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chandan-INC.Chandan-Controls";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5822EE6F1CE9B1E500588EB7 /* Build configuration list for PBXProject "Chandan_Controls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822EE8C1CE9B1E500588EB7 /* Debug */,
+				5822EE8D1CE9B1E500588EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5822EE8E1CE9B1E500588EB7 /* Build configuration list for PBXNativeTarget "Chandan_Controls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822EE8F1CE9B1E500588EB7 /* Debug */,
+				5822EE901CE9B1E500588EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5822EE6C1CE9B1E500588EB7 /* Project object */;
+}
