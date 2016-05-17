@@ -14,7 +14,6 @@
 		5822EE871CE9B1E500588EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE861CE9B1E500588EB7 /* Assets.xcassets */; };
 		5822EE8A1CE9B1E500588EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */; };
 		5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */; };
-		5822EEB91CE9B3EC00588EB7 /* CATextFieldWithTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */; };
 		5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +30,6 @@
 		5822EE8B1CE9B1E500588EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoFillTextField.h; sourceTree = "<group>"; };
 		5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoFillTextField.m; sourceTree = "<group>"; };
-		5822EEB11CE9B3EC00588EB7 /* CATextFieldWithTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextFieldWithTableView.h; sourceTree = "<group>"; };
-		5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextFieldWithTableView.m; sourceTree = "<group>"; };
 		5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoCompleteObject.h; sourceTree = "<group>"; };
 		5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoCompleteObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +91,6 @@
 			children = (
 				5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */,
 				5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */,
-				5822EEB11CE9B3EC00588EB7 /* CATextFieldWithTableView.h */,
-				5822EEB21CE9B3EC00588EB7 /* CATextFieldWithTableView.m */,
 				5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */,
 				5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */,
 			);
@@ -176,7 +171,6 @@
 				5822EE7F1CE9B1E500588EB7 /* ViewController.m in Sources */,
 				5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */,
 				5822EE7C1CE9B1E500588EB7 /* AppDelegate.m in Sources */,
-				5822EEB91CE9B3EC00588EB7 /* CATextFieldWithTableView.m in Sources */,
 				5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */,
 				5822EE791CE9B1E500588EB7 /* main.m in Sources */,
 			);
@@ -325,6 +319,7 @@
 				5822EE901CE9B1E500588EB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
