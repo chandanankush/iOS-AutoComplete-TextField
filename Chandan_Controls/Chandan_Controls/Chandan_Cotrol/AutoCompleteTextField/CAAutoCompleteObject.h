@@ -10,12 +10,12 @@
 
 @interface CAAutoCompleteObject : NSObject
 
-- (id) initWithObjectName:(NSString *) objName AndID:(NSInteger ) obID;
+- (instancetype)initWithObjectName:(NSString *)objName AndID:(NSInteger)obID NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, strong) NSString *objName;
-@property (nonatomic, assign)  NSInteger objID;
-@property (nonatomic, assign)  BOOL isSelectable;//default is YES
-@property (nonatomic, assign)  BOOL isDefaultSelected;
+@property(nonatomic, strong) NSString *objName;
+@property(nonatomic, assign) NSInteger objID;
+@property(nonatomic, assign) BOOL isSelectable; // default is YES
+@property(nonatomic, assign) BOOL isDefaultSelected;
 
 @end
 

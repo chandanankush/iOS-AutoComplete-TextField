@@ -11,16 +11,19 @@
 @protocol CAAutoFillDelegate;
 @class CAAutoCompleteObject;
 
-@interface CAAutoFillTextField : UIView <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
-@property (nonatomic, strong) NSMutableArray <CAAutoCompleteObject *> *dataSourceArray;
-@property (nonatomic, strong) UITextField * txtField;
-@property (nonatomic, assign) id<CAAutoFillDelegate>delegate;
-@end
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CAAutoFillTextField : UIView <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@property(nonatomic, strong) NSMutableArray<CAAutoCompleteObject *> *dataSourceArray;
+@property(nonatomic, strong) UITextField *txtField;
+@property(nonatomic, weak, nullable) id<CAAutoFillDelegate> delegate;
+@end
 
 @protocol CAAutoFillDelegate <NSObject>
 @optional
-- (void) CAAutoTextFillBeginEditing:(CAAutoFillTextField *) textField;
-- (void) CAAutoTextFillEndEditing:(CAAutoFillTextField *) textField;
-- (BOOL) CAAutoTextFillWantsToEdit:(CAAutoFillTextField *) textField;
+- (void)CAAutoTextFillBeginEditing:(CAAutoFillTextField *)textField;
+- (void)CAAutoTextFillEndEditing:(CAAutoFillTextField *)textField;
+- (BOOL)CAAutoTextFillWantsToEdit:(CAAutoFillTextField *)textField;
 @end
+
+NS_ASSUME_NONNULL_END

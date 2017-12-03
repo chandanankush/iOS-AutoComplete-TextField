@@ -10,7 +10,7 @@
 
 @implementation CAAutoCompleteObject
 
-- (id) initWithObjectName:(NSString *) objName AndID:(NSInteger ) obID {
+- (instancetype)initWithObjectName:(NSString *)objName AndID:(NSInteger)obID {
     if (self = [super init]) {
         self.objName = objName;
         self.objID = obID;
@@ -20,7 +20,7 @@
     return self;
 }
 
-- (void) dealloc {
+- (void)dealloc {
     self.objName = nil;
 }
 
