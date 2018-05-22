@@ -13,8 +13,7 @@
 		5822EE821CE9B1E500588EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE801CE9B1E500588EB7 /* Main.storyboard */; };
 		5822EE871CE9B1E500588EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE861CE9B1E500588EB7 /* Assets.xcassets */; };
 		5822EE8A1CE9B1E500588EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */; };
-		5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */; };
-		5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */; };
+		FF4D326C534B637370CBB5E2 /* libPods-Chandan_Controls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CC8E9859F0DA574C85F50A /* libPods-Chandan_Controls.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +27,9 @@
 		5822EE861CE9B1E500588EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5822EE891CE9B1E500588EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5822EE8B1CE9B1E500588EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoFillTextField.h; sourceTree = "<group>"; };
-		5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoFillTextField.m; sourceTree = "<group>"; };
-		5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoCompleteObject.h; sourceTree = "<group>"; };
-		5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAutoCompleteObject.m; sourceTree = "<group>"; };
+		66D5A6B166F4170A0943841D /* Pods-Chandan_Controls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chandan_Controls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls.debug.xcconfig"; sourceTree = "<group>"; };
+		EBAE028F4652A4A9845C9033 /* Pods-Chandan_Controls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chandan_Controls.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls.release.xcconfig"; sourceTree = "<group>"; };
+		F8CC8E9859F0DA574C85F50A /* libPods-Chandan_Controls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chandan_Controls.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4D326C534B637370CBB5E2 /* libPods-Chandan_Controls.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A48CA73C8EFF2339100FF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D5A6B166F4170A0943841D /* Pods-Chandan_Controls.debug.xcconfig */,
+				EBAE028F4652A4A9845C9033 /* Pods-Chandan_Controls.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5822EE6B1CE9B1E500588EB7 = {
 			isa = PBXGroup;
 			children = (
 				5822EE761CE9B1E500588EB7 /* Chandan_Controls */,
 				5822EE751CE9B1E500588EB7 /* Products */,
+				25A48CA73C8EFF2339100FF7 /* Pods */,
+				6A066AB2150B6F1CF0F0BA28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +74,6 @@
 		5822EE761CE9B1E500588EB7 /* Chandan_Controls */ = {
 			isa = PBXGroup;
 			children = (
-				5822EEAE1CE9B3EC00588EB7 /* AutoCompleteTextField */,
 				5822EE7A1CE9B1E500588EB7 /* AppDelegate.h */,
 				5822EE7B1CE9B1E500588EB7 /* AppDelegate.m */,
 				5822EE7D1CE9B1E500588EB7 /* ViewController.h */,
@@ -86,16 +95,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5822EEAE1CE9B3EC00588EB7 /* AutoCompleteTextField */ = {
+		6A066AB2150B6F1CF0F0BA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5822EEAF1CE9B3EC00588EB7 /* CAAutoFillTextField.h */,
-				5822EEB01CE9B3EC00588EB7 /* CAAutoFillTextField.m */,
-				5822EEBA1CE9B4A200588EB7 /* CAAutoCompleteObject.h */,
-				5822EEBB1CE9B4A200588EB7 /* CAAutoCompleteObject.m */,
+				F8CC8E9859F0DA574C85F50A /* libPods-Chandan_Controls.a */,
 			);
-			name = AutoCompleteTextField;
-			path = Chandan_Cotrol/AutoCompleteTextField;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5822EE8E1CE9B1E500588EB7 /* Build configuration list for PBXNativeTarget "Chandan_Controls" */;
 			buildPhases = (
+				46A78CA8B253C409AB971315 /* [CP] Check Pods Manifest.lock */,
 				5822EE701CE9B1E500588EB7 /* Sources */,
 				5822EE711CE9B1E500588EB7 /* Frameworks */,
 				5822EE721CE9B1E500588EB7 /* Resources */,
@@ -163,15 +169,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46A78CA8B253C409AB971315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chandan_Controls-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5822EE701CE9B1E500588EB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5822EE7F1CE9B1E500588EB7 /* ViewController.m in Sources */,
-				5822EEBC1CE9B4A200588EB7 /* CAAutoCompleteObject.m in Sources */,
 				5822EE7C1CE9B1E500588EB7 /* AppDelegate.m in Sources */,
-				5822EEB81CE9B3EC00588EB7 /* CAAutoFillTextField.m in Sources */,
 				5822EE791CE9B1E500588EB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +325,7 @@
 		};
 		5822EE8F1CE9B1E500588EB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D5A6B166F4170A0943841D /* Pods-Chandan_Controls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chandan_Controls/Info.plist;
@@ -311,6 +337,7 @@
 		};
 		5822EE901CE9B1E500588EB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBAE028F4652A4A9845C9033 /* Pods-Chandan_Controls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chandan_Controls/Info.plist;
