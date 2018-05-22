@@ -21,7 +21,7 @@
     
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     for (int i = 0; i <= 10; i++) {
-        CAAutoCompleteObject *object = [[CAAutoCompleteObject alloc] initWithObjectName:[NSString stringWithFormat:@"chandan %d", i] AndID:i];
+        CAAutoCompleteObject *object = [[CAAutoCompleteObject alloc] initWithObjectName:[NSString stringWithFormat:@"drop down %d", i] AndID:i];
         [tempArray addObject:object];
     }
     _myTextField.dataSourceArray = tempArray;

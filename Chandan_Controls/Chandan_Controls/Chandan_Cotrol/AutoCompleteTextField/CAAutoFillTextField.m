@@ -10,10 +10,10 @@
 #import "CAAutoCompleteObject.h"
 
 @interface CAAutoFillTextField () {
-    UITableView *autoCompleteTableView;
     CGFloat tableHeight;
 }
 
+@property(nonatomic, strong) UITableView *autoCompleteTableView;
 @property(nonatomic, strong) NSMutableArray<CAAutoCompleteObject *> *autoCompleteArray;
 
 @end
@@ -40,16 +40,15 @@
         [self addSubview:_txtField];
         
         // Autocomplete Table
-        autoCompleteTableView =
-        [[UITableView alloc] initWithFrame:CGRectMake(3, _txtField.frame.origin.y + _txtField.frame.size.height, frame.size.width - 5, tableHeight)
-                                     style:UITableViewStylePlain];
-        autoCompleteTableView.delegate = self;
-        autoCompleteTableView.dataSource = self;
-        autoCompleteTableView.scrollEnabled = YES;
-        autoCompleteTableView.hidden = NO;
-        autoCompleteTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        autoCompleteTableView.rowHeight = tableHeight;
-        [self addSubview:autoCompleteTableView];
+        self.autoCompleteTableView =
+        [[UITableView alloc] initWithFrame:CGRectMake(3, _txtField.frame.origin.y + _txtField.frame.size.height, frame.size.width - 5, tableHeight) style:UITableViewStylePlain];
+        self.autoCompleteTableView.delegate = self;
+        self.autoCompleteTableView.dataSource = self;
+        self.autoCompleteTableView.scrollEnabled = YES;
+        self.autoCompleteTableView.hidden = NO;
+        self.autoCompleteTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        self.autoCompleteTableView.rowHeight = tableHeight;
+        [self addSubview:self.autoCompleteTableView];
         
         _dataSourceArray = [[NSMutableArray alloc] init];
         _autoCompleteArray = [[NSMutableArray alloc] init];
@@ -77,15 +76,14 @@
         [self addSubview:_txtField];
         
         // Autocomplete Table
-        autoCompleteTableView =
-        [[UITableView alloc] initWithFrame:CGRectMake(3, _txtField.frame.origin.y + _txtField.frame.size.height, frame.size.width - 5, tableHeight)
-                                     style:UITableViewStylePlain];
-        autoCompleteTableView.delegate = self;
-        autoCompleteTableView.dataSource = self;
-        autoCompleteTableView.scrollEnabled = YES;
-        autoCompleteTableView.hidden = NO;
-        autoCompleteTableView.rowHeight = tableHeight;
-        [self addSubview:autoCompleteTableView];
+        self.autoCompleteTableView =
+        [[UITableView alloc] initWithFrame:CGRectMake(3, _txtField.frame.origin.y + _txtField.frame.size.height, frame.size.width - 5, tableHeight) style:UITableViewStylePlain];
+        self.autoCompleteTableView.delegate = self;
+        self.autoCompleteTableView.dataSource = self;
+        self.autoCompleteTableView.scrollEnabled = YES;
+        self.autoCompleteTableView.hidden = NO;
+        self.autoCompleteTableView.rowHeight = tableHeight;
+        [self addSubview:self.autoCompleteTableView];
         
         _dataSourceArray = [[NSMutableArray alloc] init];
         _autoCompleteArray = [[NSMutableArray alloc] init];
@@ -105,8 +103,8 @@
             [_autoCompleteArray addObject:object];
         }
     }
-    autoCompleteTableView.hidden = NO;
-    [autoCompleteTableView reloadData];
+    self.autoCompleteTableView.hidden = NO;
+    [self.autoCompleteTableView reloadData];
 }
 
 #pragma mark UITableViewDelegate methods
@@ -144,15 +142,15 @@
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         autoCompleteTableView.frame = tableRect;
+                         self.autoCompleteTableView.frame = tableRect;
                          self.frame = baseViewRect;
                      }
                      completion:^(BOOL finished){
                      }];
     
-    autoCompleteTableView.hidden = NO;
+    self.autoCompleteTableView.hidden = NO;
     if (returnCount == 0) {
-        autoCompleteTableView.hidden = YES;
+        self.autoCompleteTableView.hidden = YES;
     }
     return returnCount;
 }
@@ -185,7 +183,7 @@
     [self resignFirstResponder];
     
     [_autoCompleteArray removeAllObjects];
-    [autoCompleteTableView reloadData];
+    [self.autoCompleteTableView reloadData];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -226,13 +224,9 @@
     [_dataSourceArray removeAllObjects];
     [_autoCompleteArray removeAllObjects];
     
-    _autoCompleteArray = nil;
-    _dataSourceArray = nil;
+    [_autoCompleteTableView removeFromSuperview];
     
-    [autoCompleteTableView removeFromSuperview];
-    autoCompleteTableView = nil;
     [_txtField removeFromSuperview];
-    _txtField = nil;
 }
 
 @end
