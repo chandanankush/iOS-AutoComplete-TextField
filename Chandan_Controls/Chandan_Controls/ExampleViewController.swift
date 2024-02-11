@@ -23,6 +23,7 @@ class ExampleViewController: UIViewController {
             tempArray.append(object)
         }
         myTextField.dataSourceArray = tempArray
+        myTextField.clipsToBounds = false
         myTextField.delegate = self
     }
 }
