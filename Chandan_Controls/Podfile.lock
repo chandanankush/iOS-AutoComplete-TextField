@@ -1,0 +1,16 @@
+PODS:
+  - CAAutoFillTextField (0.1.1)
+
+DEPENDENCIES:
+  - CAAutoFillTextField
+
+SPEC REPOS:
+  trunk:
+    - CAAutoFillTextField
+
+SPEC CHECKSUMS:
+  CAAutoFillTextField: 10c8160b0e5da8b9eefe01c7febc095cf4c57a67
+
+PODFILE CHECKSUM: a38356dc09982c660f266b6df69df2eafc2d07e8
+
+COCOAPODS: 1.12.1
