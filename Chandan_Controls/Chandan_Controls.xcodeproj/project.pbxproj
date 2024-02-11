@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		5822EE821CE9B1E500588EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE801CE9B1E500588EB7 /* Main.storyboard */; };
 		5822EE871CE9B1E500588EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE861CE9B1E500588EB7 /* Assets.xcassets */; };
 		5822EE8A1CE9B1E500588EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */; };
-		8C9F89972B79028C00662C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F89962B79028C00662C92 /* ViewController.swift */; };
+		8C9F89972B79028C00662C92 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F89962B79028C00662C92 /* ExampleViewController.swift */; };
 		FF4D326C534B637370CBB5E2 /* libPods-Chandan_Controls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CC8E9859F0DA574C85F50A /* libPods-Chandan_Controls.a */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 		5822EE891CE9B1E500588EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5822EE8B1CE9B1E500588EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D5A6B166F4170A0943841D /* Pods-Chandan_Controls.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chandan_Controls.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls.debug.xcconfig"; sourceTree = "<group>"; };
-		8C9F89962B79028C00662C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C9F89962B79028C00662C92 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		EBAE028F4652A4A9845C9033 /* Pods-Chandan_Controls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chandan_Controls.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls.release.xcconfig"; sourceTree = "<group>"; };
 		F8CC8E9859F0DA574C85F50A /* libPods-Chandan_Controls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chandan_Controls.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,7 +75,7 @@
 			children = (
 				5822EE7A1CE9B1E500588EB7 /* AppDelegate.h */,
 				5822EE7B1CE9B1E500588EB7 /* AppDelegate.m */,
-				8C9F89962B79028C00662C92 /* ViewController.swift */,
+				8C9F89962B79028C00662C92 /* ExampleViewController.swift */,
 				5822EE801CE9B1E500588EB7 /* Main.storyboard */,
 				5822EE861CE9B1E500588EB7 /* Assets.xcassets */,
 				5822EE881CE9B1E500588EB7 /* LaunchScreen.storyboard */,
@@ -112,7 +112,6 @@
 				5822EE701CE9B1E500588EB7 /* Sources */,
 				5822EE711CE9B1E500588EB7 /* Frameworks */,
 				5822EE721CE9B1E500588EB7 /* Resources */,
-				950EE4E7EC15EBF81E20C8BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,7 +139,7 @@
 				};
 			};
 			buildConfigurationList = 5822EE6F1CE9B1E500588EB7 /* Build configuration list for PBXProject "Chandan_Controls" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -190,24 +189,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		950EE4E7EC15EBF81E20C8BB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/CAAutoFillTextField/CAAutoFillTextField.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CAAutoFillTextField.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chandan_Controls/Pods-Chandan_Controls-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5822EE7C1CE9B1E500588EB7 /* AppDelegate.m in Sources */,
-				8C9F89972B79028C00662C92 /* ViewController.swift in Sources */,
+				8C9F89972B79028C00662C92 /* ExampleViewController.swift in Sources */,
 				5822EE791CE9B1E500588EB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
